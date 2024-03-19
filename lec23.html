@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            box-sizing:border-box;
+        }
+        .container{
+            width:200vh;
+            height:100vh;
+            border:solid red 2px;
+            background-color: rgb(0, 247, 255);
+        }
+        .box{
+            margin:10px;
+            padding:10px;
+            width:180px;
+            height:40px;
+            border:solid rgb(10, 3, 3) 2px;
+            background-color: rgb(181, 219, 11);
+            border-radius:10px;
+            position: fixed;
+           animation: ajit 4s linear 0s infinite normal;
+
+        }
+       @keyframes ajit{
+        from{
+            top:0px;
+            left:0px;
+        }
+        to{
+            top:0px;
+            left:800px;
+             }
+       }
+       .box1{
+        margin:10px;
+        padding:10px;
+        width:80px;
+        height:80px;
+        text-align: center;
+        border:solid rgb(10, 3, 3) 2px;
+        background-color: rgb(219, 11, 73);
+        border-radius:50%;
+        position: relative;
+       animation: ajitg 4s linear 0s infinite normal;
+
+       }
+       @keyframes ajitg{
+        0%{
+            top:10px;
+            left:20px;
+            background-color: rgb(151, 8, 8);
+            border: solid 4px green;
+        }25%{
+            top:10px;
+            right:800px;
+            background-color: rgb(165, 42, 114);
+            border: solid 4px rgb(5, 36, 37);
+        }
+        75%{
+            top:600px;
+            left:10px;
+            background-color: rgb(165, 42, 114);
+            border: solid 4px rgb(5, 36, 37);
+        }
+        100%{
+            top:600px;
+            right:800px;
+            background-color: rgb(97, 165, 42);
+            border: solid 4px rgb(5, 36, 37);
+        }
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"> </div>
+        <div class="box1"></div>
+    </div>
+</body>
+</html>
